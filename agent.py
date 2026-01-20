@@ -1,32 +1,12 @@
-# from langchain_community.llms import Ollama
+
 from data import market_data, news_data
 from prompts import PROMPT
-
-# llm = Ollama(model="mistral")
-# def run():
-#     market = market_data()
-#     news = news_data()
-
-#     final_prompt = PROMPT.format(market=market, news=news)
-#     return llm.invoke(final_prompt)
-
-# from langchain_ollama import OllamaLLM
-# llm = OllamaLLM(model="phi")  # or tinyllama
-
 from langchain_ollama import OllamaLLM
 
 llm = OllamaLLM(
     model="tinyllama",
     temperature=0.2,
-    num_predict=150
-)
-
-
-# def run():
-#     market = market_data()
-#     news = news_data()
-#     final_prompt = PROMPT.format(market=market, news=news)
-#     return llm.invoke(final_prompt)
+    num_predict=1000)
 def run():
     print("▶ Agent started")
 
