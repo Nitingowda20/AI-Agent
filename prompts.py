@@ -10,6 +10,8 @@ REQUIREMENTS:
 - Highlight macroeconomic impact
 - Avoid greetings or conversational language
 - Output must be analytical and factual
+- Final point should include whether to invest or not based on the trend
+- Risk Signals
 
 MARKET DATA:
 {market}
@@ -18,5 +20,5 @@ NEWS DATA:
 {news}
 
 OUTPUT:
-Provide a professional market summary in 5–7 bullet points.
+Provide a professional market summary in 10 bullet points ith one after another. 
 """
